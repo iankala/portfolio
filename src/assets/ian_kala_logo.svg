@@ -1,0 +1,83 @@
+<svg width="200" height="260" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .ring { fill: none; stroke: #888780; }
+    .mono { fill: #ffffff; }
+    .mono-line { stroke: #ffffff; fill: none; }
+    .accent { fill: #EF9F27; }
+    .amber-ring { fill: none; stroke: #EF9F27; }
+    .name-text {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      font-size: 16px;
+      fill: #ffffff;
+    }
+    .tag-text {
+      font-family: Arial, sans-serif;
+      font-weight: 200;
+      letter-spacing: 0.4em;
+      font-size: 7px;
+      fill: #888780;
+    }
+    .divider { stroke: #888780; stroke-width: 0.5; opacity: 0.5; }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spin-reverse {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(-360deg); }
+    }
+
+    .rotate-cw {
+      transform-origin: 100px 95px;
+      animation: spin 8s linear infinite;
+    }
+    .rotate-ccw {
+      transform-origin: 100px 95px;
+      animation: spin-reverse 12s linear infinite;
+    }
+  </style>
+
+  <!-- Rotating outer ring -->
+  <circle cx="100" cy="95" r="88" class="ring rotate-cw" stroke-width="0.5" stroke-dasharray="6 5"/>
+
+  <!-- Rotating dashed amber ring (counter) -->
+  <circle cx="100" cy="95" r="76" class="amber-ring rotate-ccw" stroke-width="0.8" stroke-dasharray="3 4"/>
+
+  <!-- Static inner ring -->
+  <circle cx="100" cy="95" r="68" class="ring" stroke-width="1"/>
+
+  <!-- Static IK monogram -->
+  <!-- I: vertical stem -->
+  <rect x="58" y="48" width="4" height="94" class="mono"/>
+  <!-- I: top serif -->
+  <rect x="47" y="48" width="26" height="3" class="mono"/>
+  <!-- I: bottom serif -->
+  <rect x="47" y="139" width="26" height="3" class="mono"/>
+
+  <!-- K: vertical stem -->
+  <rect x="88" y="48" width="4" height="94" class="mono"/>
+  <!-- K: upper arm -->
+  <line x1="92" y1="95" x2="128" y2="48" class="mono-line" stroke-width="3.5" stroke-linecap="square"/>
+  <!-- K: lower arm -->
+  <line x1="92" y1="95" x2="128" y2="142" class="mono-line" stroke-width="3.5" stroke-linecap="square"/>
+  <!-- K: top serif -->
+  <rect x="88" y="48" width="24" height="3" class="mono"/>
+  <!-- K: bottom serif -->
+  <rect x="88" y="139" width="24" height="3" class="mono"/>
+
+  <!-- Amber accent dot -->
+  <circle cx="100" cy="157" r="3" class="accent"/>
+
+  <!-- Divider lines -->
+  <line x1="18" y1="192" x2="62" y2="192" class="divider"/>
+  <line x1="138" y1="192" x2="182" y2="192" class="divider"/>
+
+  <!-- Name -->
+  <text x="100" y="196" text-anchor="middle" class="name-text">IAN KALA</text>
+
+  <!-- Tagline -->
+  <text x="100" y="218" text-anchor="middle" class="tag-text">PORTFOLIO</text>
+</svg>

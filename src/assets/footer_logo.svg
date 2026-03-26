@@ -1,0 +1,27 @@
+<svg width="120" height="44" viewBox="0 0 120 44" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      font-size: 28px;
+      fill: #ffffff;
+    }
+    .dot {
+      fill: #EF9F27;
+    }
+    .underline {
+      stroke: #EF9F27;
+      stroke-width: 1.5;
+    }
+  </style>
+
+  <!-- Name -->
+  <text x="8" y="30" class="name">IAN</text>
+
+  <!-- Amber dot after name -->
+  <circle cx="104" cy="26" r="4" class="dot"/>
+
+  <!-- Underline accent -->
+  <line x1="8" y1="38" x2="96" y2="38" class="underline"/>
+</svg>
