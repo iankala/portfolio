@@ -1,13 +1,32 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-body{
-  height: 100vh;
+
+body {
+  min-height: 100vh;
   background: #161513;
   color: white;
-  font-family: 'outfit';
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
 }
+
 html {
   scroll-behavior: smooth;
+}
+
+@media (min-width: 1400px) {
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
 }
