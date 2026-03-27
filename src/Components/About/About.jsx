@@ -18,7 +18,7 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I am a Full-Stack Developer with a strong foundation in the MERN
+              I am a Sofware Developer with a strong foundation in the MERN
               stack, passionate about building web applications that are both
               functional and visually compelling. From designing intuitive user
               interfaces to developing scalable server-side architectures, I

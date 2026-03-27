@@ -8,7 +8,7 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profile_img} alt="" />
       <h1>
-        I'm <span>Ian Kala</span>, a passionate Full-Stack Developer based in
+        I'm <span>Ian Kala</span>, a software engineer based in
         Nairobi, Kenya.
       </h1>{" "}
       <p>
