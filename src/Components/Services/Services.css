@@ -39,9 +39,9 @@
 
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: clamp(25px, 5vw, 40px);
-  margin-bottom: clamp(50px, 10vh, 80px);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(15px, 3vw, 25px); 
+  margin-bottom: clamp(40px, 8vh, 60px);
 }
 
 .services-format h3 {
