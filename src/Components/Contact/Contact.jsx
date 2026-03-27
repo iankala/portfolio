@@ -63,7 +63,7 @@ const Contact = () => {
             placeholder="Enter your message"
           ></textarea>
           <button className="contact-submit" type="submit">
-            Submit now
+            Submit
           </button>
           {result && <p className="contact-result">{result}</p>}
         </form>

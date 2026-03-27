@@ -59,6 +59,9 @@
   cursor: pointer;
   transition: 0.3s;
   margin-bottom: 40px;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 20px 50px;
 }
 
 .mywork-showmore:hover {

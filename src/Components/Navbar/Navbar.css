@@ -5,6 +5,7 @@
   margin: 20px 70px;
 }
 
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -91,12 +92,12 @@
     cursor: pointer;
     width: 28px;
     margin-bottom: 30px;
+    align-self: flex-end;
   }
   .nav-menu {
-    display: none;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -350px;
     flex-direction: column;
     align-items: start;
     gap: 25px;
@@ -105,9 +106,7 @@
     height: 100vh;
     padding: 40px 30px;
     z-index: 999;
-  }
-  .nav-menu.open {
-    display: flex;
+    transition: right 0.3s ease;
   }
   .nav-menu li {
     font-size: 24px;
@@ -121,5 +120,6 @@
   }
   .nav-menu {
     width: 100%;
+    right: -100%;
   }
 }
