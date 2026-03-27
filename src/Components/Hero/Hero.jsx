@@ -4,7 +4,7 @@ import profile_img from "../../assets/profile_img.jpg";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id='home' className="hero">
       <img src={profile_img} alt="" />
       <h1>
         I'm <span>Ian Kala</span>, a passionate Full-Stack Developer based in Nairobi,
@@ -19,7 +19,7 @@ const Hero = () => {
         something great together.
       </p>
       <div className="hero-action">
-        <div className="hero-connect">Connect with me</div>
+        <div className="hero-connect"><a href='#contact'>Connect with me</a></div>
         <div className="hero-resume">My resume</div>
       </div>
     </div>
