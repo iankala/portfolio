@@ -106,7 +106,7 @@
     margin: 50px 30px;
   }
   .skills-container {
-    grid-template-columns: 1fr;
+    grid-template-columns:2, 1fr;
     gap: 30px;
   }
   .skills h1 {
