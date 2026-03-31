@@ -148,12 +148,24 @@
 @media (max-width: 768px) {
   .navbar {
     margin: 20px 30px;
+    justify-content: space-between;
   }
   .nav-connect {
     display: none;
   }
   .nav-socials {
-    display: none;
+    display: flex;
+    gap: 10px;
+  }
+  .nav-github,
+  .nav-linkedin {
+    width: 45px;
+    height: 45px;
+  }
+  .nav-github img,
+  .nav-linkedin img {
+    width: 22px;
+    height: 22px;
   }
   .nav-mob-open {
     display: block;
@@ -190,6 +202,19 @@
 @media (max-width: 480px) {
   .navbar {
     margin: 15px 20px;
+  }
+  .nav-socials {
+    gap: 8px;
+  }
+  .nav-github,
+  .nav-linkedin {
+    width: 40px;
+    height: 40px;
+  }
+  .nav-github img,
+  .nav-linkedin img {
+    width: 20px;
+    height: 20px;
   }
   .nav-menu {
     width: 100%;
