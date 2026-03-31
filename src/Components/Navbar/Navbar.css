@@ -5,7 +5,6 @@
   margin: 20px 70px;
 }
 
-
 .nav-menu {
   display: flex;
   align-items: center;
@@ -19,11 +18,48 @@
   height: auto;
   object-fit: contain;
 }
-.hero-linkedin img {
+
+.nav-socials {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* GitHub Icon - White */
+.nav-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.nav-github a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.nav-github img {
   width: 28px;
   height: 28px;
-  filter: brightness(0) saturate(1.5) hue-rotate(-30deg) invert(0.5);
+  filter: brightness(0);
 }
+
+.nav-github:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* LinkedIn Icon - Blue */
 .nav-linkedin {
   display: flex;
   align-items: center;
@@ -31,7 +67,7 @@
   width: 55px;
   height: 55px;
   border: 2px solid #0077b5;
-  border-radius: 30%;
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
   background-color: #0077b5;
@@ -57,13 +93,6 @@
   box-shadow: 0 0 15px rgba(0, 119, 181, 0.6);
   background-color: #005885;
   border-color: #005885;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .nav-linkedin {
-    display: none;
-  }
 }
 
 .nav-menu li {
@@ -121,6 +150,9 @@
     margin: 20px 30px;
   }
   .nav-connect {
+    display: none;
+  }
+  .nav-socials {
     display: none;
   }
   .nav-mob-open {

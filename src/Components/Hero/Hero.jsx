@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import profile_img from "../../assets/profile_img.jpg";
 import cv from "../../assets/IANKALA CV.pdf";
-import github_icon from "../../assets/github_icon.svg";
+
 
 const Hero = () => {
   return (
@@ -29,15 +29,7 @@ const Hero = () => {
             My Resume
           </a>
         </div>
-        <div className="hero-github">
-          
-          <a  href="https://github.com/iankala"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={github_icon} alt="GitHub" />
-          </a>
-        </div>
+        
       </div>
     </div>
   );

@@ -26,7 +26,7 @@
 
 .mywork-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   width: 100%;
 }
@@ -36,48 +36,153 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .mywork-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-.mywork-item a {
-  display: block;
-  width: 100%;
-}
-
-.mywork-item img {
+/* Image wrapper with overlay */
+.mywork-image-wrapper {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 220px;
+  border-radius: 10px 10px 0 0;
+}
+
+.mywork-image-wrapper img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 12px 12px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.mywork-item:hover .mywork-image-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Overlay on hover */
+.mywork-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mywork-item:hover .mywork-overlay {
+  opacity: 1;
+}
+
+.overlay-btn {
+  padding: 10px 20px;
+  background-color: #ff6b35;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.overlay-btn:hover {
+  background-color: #ffa500;
+}
+
+/* Info section */
+.mywork-info {
+  padding: 20px;
+}
+
+.mywork-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .mywork-item h3 {
-  padding: 20px 20px 10px;
   font-size: 18px;
   font-weight: 600;
   color: #333;
   margin: 0;
+  flex: 1;
+}
+
+/* GitHub icon in header */
+.mywork-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.3s;
+  flex-shrink: 0;
+  border: 2px solid white;
+}
+
+.mywork-github:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+  background-color: #ff6b35;
+}
+
+.mywork-github img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  border-radius: 0;
+  filter: brightness(0);
+}
+
+.mywork-github:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Tech stack badges */
+.mywork-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: rgba(255, 107, 53, 0.2);
+  color: #ff6b35;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #ff6b35;
 }
 
 .mywork-short-desc {
-  padding: 0 20px 10px;
+  padding: 0;
   font-size: 14px;
   color: #666;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .mywork-full-desc {
-  padding: 0 20px 15px;
+  padding: 0;
   font-size: 14px;
   color: #555;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 15px 0;
   animation: slideDown 0.3s ease;
 }
 
@@ -99,10 +204,11 @@
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
-  padding: 0 20px 20px;
+  padding: 0;
   transition: color 0.3s;
   display: block;
   text-align: left;
+  margin-top: 10px;
 }
 
 .read-more-btn:hover {
@@ -160,7 +266,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  .mywork-item img {
+  .mywork-image-wrapper {
     height: 180px;
   }
   .mywork-showmore {
@@ -176,7 +282,7 @@
   .mywork-container {
     grid-template-columns: 1fr;
   }
-  .mywork-item img {
+  .mywork-image-wrapper {
     height: 200px;
   }
   .mywork-title h1 {

@@ -4,6 +4,7 @@ import logo from "../../assets/ian_kala_logo.svg";
 import menu_open from "../../assets/menu_open.svg";
 import menu_close from "../../assets/menu_close.svg";
 import linkedin_icon from "../../assets/linkedin_icon.svg";
+import github_icon from "../../assets/github_icon.svg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -63,14 +64,17 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="nav-linkedin">
-        
-         <a href="https://www.linkedin.com/in/ian-kala-91a680239/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={linkedin_icon} alt="LinkedIn" />
-        </a>
+      <div className="nav-socials">
+        <div className="nav-github">
+          <a href="https://github.com/iankala" target="_blank" rel="noreferrer">
+            <img src={github_icon} alt="GitHub" />
+          </a>
+        </div>
+        <div className="nav-linkedin">
+          <a href="https://www.linkedin.com/in/ian-kala-91a680239/" target="_blank" rel="noreferrer">
+            <img src={linkedin_icon} alt="LinkedIn" />
+          </a>
+        </div>
       </div>
     </div>
   );
