@@ -34,7 +34,10 @@ const Skills = () => {
 
   return (
     <div id="skills" className="skills">
+        <div>
       <h1>My Skills</h1>
+      <hr />
+        </div>
       <div className="skills-container">
         {skillsData.map((skillGroup, idx) => (
           <div key={idx} className="skill-group">

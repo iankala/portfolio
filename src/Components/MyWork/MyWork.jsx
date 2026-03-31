@@ -15,6 +15,7 @@ const MyWork = () => {
     <div id="work" className="mywork">
       <div className="mywork-title">
         <h1>My latest work</h1>
+        <hr />
       </div>
       <div className="mywork-container">
         {mywork_data

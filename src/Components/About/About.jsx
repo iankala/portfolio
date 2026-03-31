@@ -8,6 +8,7 @@ const About = () => {
     <div id='about' className="About">
       <div className="about-title">
         <h1>About me</h1>
+        <hr />
         
       </div>
       <div className="about-section">

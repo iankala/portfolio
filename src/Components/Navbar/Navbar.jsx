@@ -78,8 +78,10 @@ const Navbar = () => {
       </div>
 
       <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
+      
     </div>
   );
+  
 };
 
 export default Navbar;
