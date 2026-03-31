@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/ian_kala_logo.svg";
-import underline from "../../assets/nav_underline.svg";
 import menu_open from "../../assets/menu_open.svg";
 import menu_close from "../../assets/menu_close.svg";
+import linkedin_icon from "../../assets/linkedin_icon.svg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -15,7 +15,7 @@ const Navbar = () => {
   const closeMenu = () => {
     menuRef.current.style.right = "-350px";
   };
-   const handleNav = (section) => {
+  const handleNav = (section) => {
     setMenu(section);
     closeMenu();
   };
@@ -35,40 +35,41 @@ const Navbar = () => {
           <a href="#home" onClick={() => handleNav("home")}>
             Home
           </a>
-          {menu === "home" ? <img src={underline} alt="" /> : <></>}
+          {menu === "home" ? <div className="nav-underline"></div> : null}
         </li>
         <li>
           <a href="#about" onClick={() => handleNav("about")}>
             About Me
           </a>
-          {menu === "about" ? <img src={underline} alt="" /> : <></>}
+          {menu === "about" ? <div className="nav-underline"></div> : null}
         </li>
         <li>
           <a href="#services" onClick={() => handleNav("services")}>
             Services
           </a>
-          {menu === "services" ? <img src={underline} alt="" /> : null}
+          {menu === "services" ? <div className="nav-underline"></div> : null}
         </li>
         <li>
           <a href="#work" onClick={() => handleNav("work")}>
             Portfolio
           </a>
-          {menu === "work" ? <img src={underline} alt="" /> : <></>}
+          {menu === "work" ? <div className="nav-underline"></div> : null}
         </li>
         <li>
           <a href="#contact" onClick={() => handleNav("contact")}>
             Contact
           </a>
-          {menu === "contact" ? <img src={underline} alt="" /> : <></>}
+          {menu === "contact" ? <div className="nav-underline"></div> : null}
         </li>
       </ul>
 
-      <div className="nav-connect">
-        <a
-          target="blank"
-          href="https://www.linkedin.com/in/ian-kala-91a680239/"
+      <div className="nav-linkedin">
+        
+         <a href="https://www.linkedin.com/in/ian-kala-91a680239/"
+          target="_blank"
+          rel="noreferrer"
         >
-          Connect With Me
+          <img src={linkedin_icon} alt="LinkedIn" />
         </a>
       </div>
     </div>

@@ -31,23 +31,83 @@
   width: 100%;
 }
 
-.mywork-container a {
-  display: block;
+.mywork-item {
+  background: #fff;
+  border-radius: 10px;
   overflow: hidden;
-  border-radius: 12px;
-  transition: transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.mywork-container a:hover {
-  transform: scale(1.03);
+.mywork-item:hover {
+  transform: translateY(-5px);
 }
 
-.mywork-container img {
+.mywork-item a {
+  display: block;
+  width: 100%;
+}
+
+.mywork-item img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: block;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
+}
+
+.mywork-item h3 {
+  padding: 20px 20px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.mywork-short-desc {
+  padding: 0 20px 10px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.mywork-full-desc {
+  padding: 0 20px 15px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #ff6b35;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 20px 20px;
+  transition: color 0.3s;
+  display: block;
+  text-align: left;
+}
+
+.read-more-btn:hover {
+  color: #e55a24;
+  text-decoration: underline;
 }
 
 .mywork-showmore {
@@ -100,7 +160,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  .mywork-container img {
+  .mywork-item img {
     height: 180px;
   }
   .mywork-showmore {
@@ -116,7 +176,7 @@
   .mywork-container {
     grid-template-columns: 1fr;
   }
-  .mywork-container img {
+  .mywork-item img {
     height: 200px;
   }
   .mywork-title h1 {

@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import profile_img from "../../assets/profile_img.jpg";
 import cv from "../../assets/IANKALA CV.pdf";
+import github_icon from "../../assets/github_icon.svg";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
       <h1>
         I'm <span>Ian Kala</span>, a software engineer based in
         Nairobi, Kenya.
-      </h1>{" "}
+      </h1>
       <p>
         Specializing in building modern, scalable web applications using the
         MERN stack — MongoDB, Express.js, React, and Node.js. I craft seamless
@@ -26,6 +27,15 @@ const Hero = () => {
         <div className="hero-resume">
           <a href={cv} target="_blank" rel="noreferrer">
             My Resume
+          </a>
+        </div>
+        <div className="hero-github">
+          
+          <a  href="https://github.com/iankala"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={github_icon} alt="GitHub" />
           </a>
         </div>
       </div>
