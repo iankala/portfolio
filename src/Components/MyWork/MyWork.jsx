@@ -24,25 +24,9 @@ const MyWork = () => {
             return (
               <div key={index} className="mywork-item">
                 <div className="mywork-image-wrapper">
-                  <img src={work.w_img} alt={work.w_name} />
-                  <div className="mywork-overlay">
-                    
-                    <a  href={work.w_live}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="overlay-btn"
-                    >
-                      View Live
-                    </a>
-                    
-                    <a  href={work.w_github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="overlay-btn"
-                    >
-                      GitHub
-                    </a>
-                  </div>
+                  <a href={work.w_live} target="_blank" rel="noreferrer">
+                    <img src={work.w_img} alt={work.w_name} />
+                  </a>
                 </div>
                 <div className="mywork-info">
                   <div className="mywork-header">
