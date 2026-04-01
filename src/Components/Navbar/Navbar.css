@@ -187,8 +187,9 @@
     display: block;
     cursor: pointer;
     width: 28px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     align-self: flex-end;
+    margin-top: 45px;
   }
   .nav-menu {
     position: fixed;
