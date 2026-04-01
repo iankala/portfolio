@@ -20,7 +20,7 @@ const mywork_data = [
         w_img:workout_tracker,
         w_short_desc:"Full-stack fitness tracking app with user authentication and modern UI.",
         w_desc:"A comprehensive workout tracking application built with the MERN stack, featuring secure JWT authentication, user-specific workout data management, real-time CRUD operations, and a modern glassmorphic UI design. The app includes exercise logging, load/reps tracking, and personalized workout history with smooth animations and responsive design. Deployed on Render (backend) and Vercel (frontend).",
-        w_tech:["React", "Node.js", "MongoDB", "Express", "JWT", "TailwindCSS"],
+        w_tech:["React", "Node.js", "MongoDB", "Express", "TailwindCSS"],
         w_github:"https://github.com/iankala/workout-tracker",
         w_live:"https://workout-tracker-indol-eight.vercel.app/",
         w_icon: github_icon,
