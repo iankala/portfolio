@@ -106,7 +106,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .services {
     align-items: start;
     gap: 70px;
@@ -123,7 +123,7 @@
     padding: 32px;
   }
   .services-container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns:  1fr;
     gap: 30px;
   }
   .services-readmore img {
