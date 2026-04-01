@@ -50,7 +50,7 @@
 }
 
 .skill-item:hover .skill-progress {
-  background: linear-gradient(90deg, #ffa500, #ff6b35);
+  background: linear-gradient(90deg, #5100ff, #ff6b35);
 }
 
 .skill-header {
